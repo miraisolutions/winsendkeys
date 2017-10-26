@@ -12,5 +12,5 @@ sendKeys("{DELAY=50}@rchrome{ENTER}{DELAY=200}h{DELAY=50}ttp://mirai-solutions.c
 sendKeys("{DELAY=50}@rchrome{ENTER}{DELAY=300}m{DELAY=50}irai-solutions^{ENTER}")
 }
 \references{
-url{https://www.codeproject.com/Articles/6819/SendKeys-in-C}
+\url{https://www.codeproject.com/Articles/6819/SendKeys-in-C}
 }

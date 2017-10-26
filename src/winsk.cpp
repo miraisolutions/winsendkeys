@@ -118,7 +118,7 @@ void loopTest() {
 // ALT -> %
 
 //' @title Send keys to active window
-//' @references url{https://www.codeproject.com/Articles/6819/SendKeys-in-C}
+//' @references \url{https://www.codeproject.com/Articles/6819/SendKeys-in-C}
 //' @export
 //' @examples
 //' sendKeys("{DELAY=50}@rnotepad{ENTER}")
