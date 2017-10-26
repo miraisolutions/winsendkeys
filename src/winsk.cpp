@@ -38,6 +38,7 @@ void sendKeyUp(unsigned char keyCode) {
   SendInput(1, &input, sizeof(INPUT));
 }
 
+//' @export
 // [[Rcpp::export]]
 void altTab() {
   sendKeyDown(VK_LMENU);
@@ -54,6 +55,7 @@ void altTab() {
   sendKeyUp(VK_LMENU);
 }
 
+//' @export
 // [[Rcpp::export]]
 void ctrlAltDown() {
   sendKeyDown(VK_LCONTROL);
@@ -64,6 +66,7 @@ void ctrlAltDown() {
   sendKeyUp(VK_LCONTROL);
 }
 
+//' @export
 // [[Rcpp::export]]
 void loopTest() {
   // http://www.kbdedit.com/manual/low_level_vk_list.html
@@ -114,6 +117,7 @@ void loopTest() {
 // CTRL -> ^
 // ALT -> %
 
+//' @title Send keys to active window
 //' @references url{https://www.codeproject.com/Articles/6819/SendKeys-in-C}
 //' @export
 //' @examples
@@ -131,6 +135,7 @@ void sendKeys(CharacterVector x) {
   csk.SendKeys(z, false);
 }
 
+//' @title Activate window
 //' @export
 //' @examples
 //' activateWindow("Notepad")
