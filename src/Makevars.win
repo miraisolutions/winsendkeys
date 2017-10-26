@@ -1,0 +1,9 @@
+# set by configure
+#RCPP_LDFLAGS = `$(R_HOME)/bin/Rscript -e "Rcpp:::LdFlags()"`
+
+PKG_CPPFLAGS += -I../inst/include
+
+# Need this for the Windows headers to work
+# Set -fpermissive, from: http://stackoverflow.com/questions/7063265/how-to-set-g-compiler-flags-using-rcpp-and-inline
+# --> C:\Users\<RolandASc>\Documents\.R\Makevars.win
+# PKG_CXXFLAGS += -fpermissive

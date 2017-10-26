@@ -1,0 +1,29 @@
+Package: winsendkeys
+Title: Windows Sendkeys Package for R
+Version: 0.0.1
+Authors@R: c(person("Roland", "Schmid", role = c("aut", "cre"),
+                    email = "roland.schmid@mirai-solutions.com"),
+             person("Mirai Solutions GmbH", role = "cph",
+                    email = "info@mirai-solutions.com"),
+             person("Elias", "Bachaalany", role = c("ctb", "cph"),
+                    comment = "Sendkeys C++ library"))
+Description: Wraps C++ sendkeys library allowing to send keystroke sequences, execute shortcuts and switch between active windows.
+  Provides a couple of more low-level SendInput examples.
+License: GPL-3
+LazyData: true
+NeedsCompilation: yes
+Depends:
+    R (>= 3.2.5)
+Imports:
+    Rcpp (>= 0.11.6)
+LinkingTo: Rcpp
+Suggests:
+    roxygen2,
+    knitr,
+    rmarkdown
+SystemRequirements:
+    Windows
+URL: http://www.mirai-solutions.com, https://github.com/miraisolutions/winsendkeys
+BugReports: https://github.com/miraisolutions/winsendkeys/issues
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
