@@ -1,2 +1,2 @@
 # winsendkeys
-Sendkeys R library for Windows
+Sendkeys R package for Windows
