@@ -7,7 +7,7 @@ using namespace Rcpp;
 
 // altTab
 void altTab();
-RcppExport SEXP winsendkeys_altTab() {
+RcppExport SEXP _winsendkeys_altTab() {
 BEGIN_RCPP
     Rcpp::RNGScope rcpp_rngScope_gen;
     altTab();
@@ -16,7 +16,7 @@ END_RCPP
 }
 // ctrlAltDown
 void ctrlAltDown();
-RcppExport SEXP winsendkeys_ctrlAltDown() {
+RcppExport SEXP _winsendkeys_ctrlAltDown() {
 BEGIN_RCPP
     Rcpp::RNGScope rcpp_rngScope_gen;
     ctrlAltDown();
@@ -25,7 +25,7 @@ END_RCPP
 }
 // loopTest
 void loopTest();
-RcppExport SEXP winsendkeys_loopTest() {
+RcppExport SEXP _winsendkeys_loopTest() {
 BEGIN_RCPP
     Rcpp::RNGScope rcpp_rngScope_gen;
     loopTest();
@@ -34,7 +34,7 @@ END_RCPP
 }
 // sendKeys
 void sendKeys(CharacterVector x);
-RcppExport SEXP winsendkeys_sendKeys(SEXP xSEXP) {
+RcppExport SEXP _winsendkeys_sendKeys(SEXP xSEXP) {
 BEGIN_RCPP
     Rcpp::RNGScope rcpp_rngScope_gen;
     Rcpp::traits::input_parameter< CharacterVector >::type x(xSEXP);
@@ -44,7 +44,7 @@ END_RCPP
 }
 // activateWindow
 void activateWindow(CharacterVector x);
-RcppExport SEXP winsendkeys_activateWindow(SEXP xSEXP) {
+RcppExport SEXP _winsendkeys_activateWindow(SEXP xSEXP) {
 BEGIN_RCPP
     Rcpp::RNGScope rcpp_rngScope_gen;
     Rcpp::traits::input_parameter< CharacterVector >::type x(xSEXP);
@@ -54,11 +54,11 @@ END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"winsendkeys_altTab", (DL_FUNC) &winsendkeys_altTab, 0},
-    {"winsendkeys_ctrlAltDown", (DL_FUNC) &winsendkeys_ctrlAltDown, 0},
-    {"winsendkeys_loopTest", (DL_FUNC) &winsendkeys_loopTest, 0},
-    {"winsendkeys_sendKeys", (DL_FUNC) &winsendkeys_sendKeys, 1},
-    {"winsendkeys_activateWindow", (DL_FUNC) &winsendkeys_activateWindow, 1},
+    {"_winsendkeys_altTab", (DL_FUNC) &_winsendkeys_altTab, 0},
+    {"_winsendkeys_ctrlAltDown", (DL_FUNC) &_winsendkeys_ctrlAltDown, 0},
+    {"_winsendkeys_loopTest", (DL_FUNC) &_winsendkeys_loopTest, 0},
+    {"_winsendkeys_sendKeys", (DL_FUNC) &_winsendkeys_sendKeys, 1},
+    {"_winsendkeys_activateWindow", (DL_FUNC) &_winsendkeys_activateWindow, 1},
     {NULL, NULL, 0}
 };
 

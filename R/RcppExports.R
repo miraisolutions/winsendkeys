@@ -3,17 +3,17 @@
 
 #' @export
 altTab <- function() {
-    invisible(.Call(winsendkeys_altTab))
+    invisible(.Call(`_winsendkeys_altTab`))
 }
 
 #' @export
 ctrlAltDown <- function() {
-    invisible(.Call(winsendkeys_ctrlAltDown))
+    invisible(.Call(`_winsendkeys_ctrlAltDown`))
 }
 
 #' @export
 loopTest <- function() {
-    invisible(.Call(winsendkeys_loopTest))
+    invisible(.Call(`_winsendkeys_loopTest`))
 }
 
 #' @title Send keys to active window
@@ -24,7 +24,7 @@ loopTest <- function() {
 #' sendKeys("{DELAY=50}@rchrome{ENTER}{DELAY=200}h{DELAY=50}ttp://mirai-solutions.ch{ENTER}")
 #' sendKeys("{DELAY=50}@rchrome{ENTER}{DELAY=300}m{DELAY=50}irai-solutions^{ENTER}")
 sendKeys <- function(x) {
-    invisible(.Call(winsendkeys_sendKeys, x))
+    invisible(.Call(`_winsendkeys_sendKeys`, x))
 }
 
 #' @title Activate window
@@ -32,6 +32,6 @@ sendKeys <- function(x) {
 #' @examples
 #' activateWindow("Notepad")
 activateWindow <- function(x) {
-    invisible(.Call(winsendkeys_activateWindow, x))
+    invisible(.Call(`_winsendkeys_activateWindow`, x))
 }
 

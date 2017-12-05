@@ -349,8 +349,9 @@ void CSendKeys::PopUpShiftKeys()
 bool CSendKeys::SendKeys(LPCTSTR KeysString, bool Wait)
 {
   WORD MKey, NumTimes;
+  NumTimes = 0;
   TCHAR KeyString[300] = {0};
-  bool retval  = false;
+  // bool retval  = false;
   int  keyIdx;
   
   LPTSTR pKey = (LPTSTR) KeysString;
@@ -360,7 +361,7 @@ bool CSendKeys::SendKeys(LPCTSTR KeysString, bool Wait)
   
   m_bWinDown = m_bShiftDown = m_bControlDown = m_bAltDown = m_bUsingParens = false;
   
-  while (ch = *pKey)
+  while ((ch = *pKey))
   {
     switch (ch)
     {

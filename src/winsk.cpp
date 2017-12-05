@@ -10,7 +10,7 @@ using namespace Rcpp;
 
 //#define WINVER 0x0500
 #include <windows.h>
-// below for C++11, but standard thread library not supported by g++ compiler
+// below for C++11, but that incl. standard thread library not supported by old Rtools g++ compiler
 //#include <thread>         // std::this_thread::sleep_for
 //#include <chrono>         // std::chrono::seconds
 
@@ -44,12 +44,6 @@ void altTab() {
   sendKeyDown(VK_LMENU);
   sendKeyDown(VK_TAB);
   //std::this_thread::sleep_for(std::chrono::seconds(10));
-  Sleep(2000);
-  sendKeyUp(VK_TAB);
-  sendKeyDown(VK_TAB);
-  Sleep(2000);
-  sendKeyUp(VK_TAB);
-  sendKeyDown(VK_TAB);
   Sleep(2000);
   sendKeyUp(VK_TAB);
   sendKeyUp(VK_LMENU);
