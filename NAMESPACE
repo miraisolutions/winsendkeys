@@ -3,6 +3,7 @@
 export(activateWindow)
 export(altTab)
 export(ctrlAltDown)
+export(key2code)
 export(loopTest)
 export(sendKeys)
 importFrom(Rcpp,sourceCpp)
