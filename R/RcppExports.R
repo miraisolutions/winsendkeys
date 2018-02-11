@@ -7,11 +7,6 @@ altTab <- function() {
 }
 
 #' @export
-ctrlAltDown <- function() {
-    invisible(.Call(`_winsendkeys_ctrlAltDown`))
-}
-
-#' @export
 loopTest <- function() {
     invisible(.Call(`_winsendkeys_loopTest`))
 }
@@ -21,7 +16,6 @@ loopTest <- function() {
 #' @export
 #' @examples
 #' sendKeys("{DELAY=50}@rnotepad{ENTER}")
-#' sendKeys("{DELAY=50}@rchrome{ENTER}{DELAY=200}h{DELAY=50}ttp://mirai-solutions.ch{ENTER}")
 #' sendKeys("{DELAY=50}@rchrome{ENTER}{DELAY=300}m{DELAY=50}irai-solutions^{ENTER}")
 sendKeys <- function(x) {
     invisible(.Call(`_winsendkeys_sendKeys`, x))

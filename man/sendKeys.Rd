@@ -8,7 +8,6 @@ sendKeys(x)
 }
 \examples{
 sendKeys("{DELAY=50}@rnotepad{ENTER}")
-sendKeys("{DELAY=50}@rchrome{ENTER}{DELAY=200}h{DELAY=50}ttp://mirai-solutions.ch{ENTER}")
 sendKeys("{DELAY=50}@rchrome{ENTER}{DELAY=300}m{DELAY=50}irai-solutions^{ENTER}")
 }
 \references{

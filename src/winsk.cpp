@@ -49,6 +49,7 @@ void altTab() {
   sendKeyUp(VK_LMENU);
 }
 
+/*
 //' @export
 // [[Rcpp::export]]
 void ctrlAltDown() {
@@ -59,6 +60,7 @@ void ctrlAltDown() {
   sendKeyUp(VK_LMENU);
   sendKeyUp(VK_LCONTROL);
 }
+*/
 
 //' @export
 // [[Rcpp::export]]
@@ -116,7 +118,6 @@ void loopTest() {
 //' @export
 //' @examples
 //' sendKeys("{DELAY=50}@rnotepad{ENTER}")
-//' sendKeys("{DELAY=50}@rchrome{ENTER}{DELAY=200}h{DELAY=50}ttp://mirai-solutions.ch{ENTER}")
 //' sendKeys("{DELAY=50}@rchrome{ENTER}{DELAY=300}m{DELAY=50}irai-solutions^{ENTER}")
 // [[Rcpp::export]]
 void sendKeys(CharacterVector x) {

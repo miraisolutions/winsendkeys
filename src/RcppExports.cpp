@@ -14,15 +14,6 @@ BEGIN_RCPP
     return R_NilValue;
 END_RCPP
 }
-// ctrlAltDown
-void ctrlAltDown();
-RcppExport SEXP _winsendkeys_ctrlAltDown() {
-BEGIN_RCPP
-    Rcpp::RNGScope rcpp_rngScope_gen;
-    ctrlAltDown();
-    return R_NilValue;
-END_RCPP
-}
 // loopTest
 void loopTest();
 RcppExport SEXP _winsendkeys_loopTest() {
@@ -55,7 +46,6 @@ END_RCPP
 
 static const R_CallMethodDef CallEntries[] = {
     {"_winsendkeys_altTab", (DL_FUNC) &_winsendkeys_altTab, 0},
-    {"_winsendkeys_ctrlAltDown", (DL_FUNC) &_winsendkeys_ctrlAltDown, 0},
     {"_winsendkeys_loopTest", (DL_FUNC) &_winsendkeys_loopTest, 0},
     {"_winsendkeys_sendKeys", (DL_FUNC) &_winsendkeys_sendKeys, 1},
     {"_winsendkeys_activateWindow", (DL_FUNC) &_winsendkeys_activateWindow, 1},
