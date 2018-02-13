@@ -3,3 +3,5 @@
 ^packrat/
 ^\.Rprofile$
 ^appveyor\.yml$
+^codecov\.yml$
+^runCodecov\.R$
