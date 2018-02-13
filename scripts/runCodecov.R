@@ -1,4 +1,7 @@
 library(covr)
 sink("C:/projects/winsendkeys/winsendkeys.Rcheck/covrlog.txt")
 print(Sys.getenv("APPVEYOR_REPO_NAME"))
+print(Sys.getenv("APPVEYOR_ACCOUNT_NAME"))
+print(Sys.getenv("APPVEYOR_PROJECT_NAME"))
+print(Sys.getenv("APPVEYOR_PROJECT_SLUG"))
 codecov(path = "C:/projects/winsendkeys", quiet = FALSE)
