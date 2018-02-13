@@ -28,7 +28,8 @@ on_failure:
 
 # below runs after artifacts, so try to 'PushArtifact'
 on_success:
-  - Rscript -e 'library(covr);sink(\"C:/projects/winsendkeys/mylogs/covrlog.txt\");codecov(path=\"C:/projects/winsendkeys\",quiet=FALSE)'
+  #- Rscript -e 'library(covr);sink(\"C:/projects/winsendkeys/mylogs/covrlog.txt\");codecov(path=\"C:/projects/winsendkeys\",quiet=FALSE)'
+  - Rscript runCodecov.R
   - appveyor PushArtifact C:\projects\winsendkeys\mylogs\covrlog.txt
   #- Rscript -e 'covr::codecov(quiet=FALSE)'
 
