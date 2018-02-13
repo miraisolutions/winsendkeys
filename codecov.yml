@@ -3,7 +3,7 @@ comment: false
 coverage:
   precision: 2
   round: down
-  range: "30...100"
+  range: "10...100"
 
   status:
     project: yes
