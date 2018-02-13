@@ -1,3 +1,10 @@
+cache:
+  - c:\RLibrary
+
+environment:
+  R_VERSION: release
+  R_ARCH: x64
+
 init:
   ps: |
         $ErrorActionPreference = "Stop"
@@ -18,6 +25,12 @@ test_script:
 on_failure:
   - 7z a failure.zip *.Rcheck\*
   - appveyor PushArtifact failure.zip
+
+r_github_packages:
+  - r-lib/covr
+
+after_success:
+  - Rscript -e 'covr::codecov()'
 
 artifacts:
   - path: '*.Rcheck\**\*.log'
