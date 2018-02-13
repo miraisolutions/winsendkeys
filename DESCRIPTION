@@ -20,7 +20,8 @@ LinkingTo: Rcpp
 Suggests:
     roxygen2,
     knitr,
-    rmarkdown
+    rmarkdown,
+    covr
 SystemRequirements:
     Windows
 URL: http://www.mirai-solutions.com, https://github.com/miraisolutions/winsendkeys
