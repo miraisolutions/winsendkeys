@@ -26,8 +26,10 @@ on_failure:
   - 7z a failure.zip *.Rcheck\*
   - appveyor PushArtifact failure.zip
 
+# below runs after artifacts, so try to 'PushArtifact'
 on_success:
   - Rscript -e 'sink("C:/projects/winsendkeys/mylogs/covrlog.txt");covr::codecov(path="C:/projects/winsendkeys",quiet=FALSE)'
+  - appveyor PushArtifact C:\projects\winsendkeys\mylogs\covrlog.txt
   #- Rscript -e 'covr::codecov(quiet=FALSE)'
 
 artifacts:
@@ -43,8 +45,8 @@ artifacts:
   - path: '*.Rcheck\**\*.Rout'
     name: Logs
 
-  - path: 'mylogs\**\*.txt'
-    name: Logs
+#  - path: 'mylogs\**\*.txt'
+#    name: Logs
 
   - path: '\*_*.tar.gz'
     name: Bits
