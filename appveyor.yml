@@ -27,8 +27,8 @@ on_failure:
   - appveyor PushArtifact failure.zip
 
 on_success:
-  - Rscript -e 'covr::codecov(quiet=FALSE)'
-  #- Rscript -e 'covr::codecov(path="C:/projects/winsendkeys",quiet=FALSE)'
+  - Rscript -e 'covr::codecov(path="C:/projects/winsendkeys")'
+  #- Rscript -e 'covr::codecov(quiet=FALSE)'
 
 artifacts:
   - path: '*.Rcheck\**\*.log'
