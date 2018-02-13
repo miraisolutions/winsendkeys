@@ -21,6 +21,7 @@ Suggests:
     roxygen2,
     knitr,
     rmarkdown,
+    testthat (>= 2.0.0),
     covr
 SystemRequirements:
     Windows
