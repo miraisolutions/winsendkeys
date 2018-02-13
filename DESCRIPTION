@@ -23,6 +23,8 @@ Suggests:
     rmarkdown,
     testthat (>= 2.0.0),
     covr
+Remotes:
+    miraisolutions/covr
 SystemRequirements:
     Windows
 URL: http://www.mirai-solutions.com, https://github.com/miraisolutions/winsendkeys
