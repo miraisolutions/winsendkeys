@@ -1,3 +1,3 @@
 library(covr)
-sink("C:/projects/winsendkeys/winsendkeys.Rcheck/covrlog.txt")
-codecov(path = "C:/projects/winsendkeys", quiet = FALSE)
+sink(paste0(basename(normalizePath(".")), ".Rcheck/covrlog.txt"))
+codecov(quiet = FALSE)
