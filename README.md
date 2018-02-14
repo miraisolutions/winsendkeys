@@ -1,6 +1,7 @@
 # winsendkeys
 
 [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/miraisolutions/winsendkeys?branch=master&svg=true)](https://ci.appveyor.com/project/RolandASc/winsendkeys)
+[![codecov](https://codecov.io/gh/miraisolutions/winsendkeys/branch/master/graph/badge.svg)](https://codecov.io/gh/miraisolutions/winsendkeys)
 
 Sendkeys R package for Windows
 
