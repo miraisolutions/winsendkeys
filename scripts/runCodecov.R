@@ -1,7 +1,3 @@
 library(covr)
 sink("C:/projects/winsendkeys/winsendkeys.Rcheck/covrlog.txt")
-print(Sys.getenv("APPVEYOR_BUILD_NUMBER"))
-print(Sys.getenv("APPVEYOR_BUILD_ID"))
-print(Sys.getenv("APPVEYOR_JOB_NUMBER"))
-print(Sys.getenv("APPVEYOR_JOB_ID"))
 codecov(path = "C:/projects/winsendkeys", quiet = FALSE)
