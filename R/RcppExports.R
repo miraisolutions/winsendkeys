@@ -12,19 +12,27 @@ loopTest <- function() {
 }
 
 #' @title Send keys to active window
+#' @description Sends keys to the active window. Beware that other processes
+#' may affect what the active window might be while the key-strokes are sent.
+#' Furthermore, the active window can be switched during a single call to
+#' \code{sendKeys}.
+#' @param x Single string containing the key sequence to send, possibly
+#' including modifiers. See the examples.
 #' @references \url{https://www.codeproject.com/Articles/6819/SendKeys-in-C}
 #' @export
 #' @examples
-#' sendKeys("{DELAY=50}@rnotepad{ENTER}")
-#' sendKeys("{DELAY=50}@rchrome{ENTER}{DELAY=300}m{DELAY=50}irai-solutions^{ENTER}")
+#' \dontrun{sendKeys("{DELAY=50}@rnotepad{ENTER}")}
+#' \dontrun{sendKeys("{DELAY=50}@rchrome{ENTER}{DELAY=300}m{DELAY=50}irai-solutions^{ENTER}")}
 sendKeys <- function(x) {
     invisible(.Call(`_winsendkeys_sendKeys`, x))
 }
 
 #' @title Activate window
+#' @description Activates the desired window by name
+#' @param x Name of the window to activate.
 #' @export
 #' @examples
-#' activateWindow("Notepad")
+#' \dontrun{activateWindow("Notepad")}
 activateWindow <- function(x) {
     invisible(.Call(`_winsendkeys_activateWindow`, x))
 }

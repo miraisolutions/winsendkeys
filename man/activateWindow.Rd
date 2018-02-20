@@ -6,6 +6,12 @@
 \usage{
 activateWindow(x)
 }
+\arguments{
+\item{x}{Name of the window to activate.}
+}
+\description{
+Activates the desired window by name
+}
 \examples{
-activateWindow("Notepad")
+\dontrun{activateWindow("Notepad")}
 }
