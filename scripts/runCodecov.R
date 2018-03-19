@@ -1,3 +1,4 @@
 library(covr)
-sink(paste0(basename(normalizePath(".")), ".Rcheck/covrlog.txt"))
-codecov(quiet = FALSE)
+#sink(paste0(basename(normalizePath(".")), ".Rcheck/covrlog.txt"))
+#codecov(quiet = FALSE, type = c("tests"))
+codecov()
