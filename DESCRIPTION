@@ -21,7 +21,8 @@ Suggests:
     roxygen2,
     knitr,
     rmarkdown,
-    testthat (>= 2.0.0)
+    testthat (>= 2.0.0),
+    covr
 Remotes:
     miraisolutions/covr
 SystemRequirements:
