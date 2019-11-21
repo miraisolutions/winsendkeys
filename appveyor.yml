@@ -1,5 +1,5 @@
-cache:
-  - c:\RLibrary
+#cache:
+#  - c:\RLibrary
 
 environment:
   R_VERSION: release
