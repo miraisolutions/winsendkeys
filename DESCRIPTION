@@ -1,6 +1,6 @@
 Package: winsendkeys
 Title: Windows Sendkeys Package for R
-Version: 0.0.1
+Version: 0.0.2
 Authors@R: c(person("Roland", "Schmid", role = c("aut", "cre"),
                     email = "roland.schmid@mirai-solutions.com"),
              person("Mirai Solutions GmbH", role = "cph",
@@ -18,9 +18,6 @@ Imports:
     Rcpp (>= 0.11.6)
 LinkingTo: Rcpp
 Suggests:
-    roxygen2,
-    knitr,
-    rmarkdown,
     testthat (>= 2.0.0),
     covr
 Remotes:
@@ -29,5 +26,5 @@ SystemRequirements:
     Windows
 URL: http://www.mirai-solutions.com, https://github.com/miraisolutions/winsendkeys
 BugReports: https://github.com/miraisolutions/winsendkeys/issues
-RoxygenNote: 6.0.1
-VignetteBuilder: knitr
+RoxygenNote: 7.0.0
+Encoding: UTF-8

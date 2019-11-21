@@ -7,21 +7,16 @@ Sendkeys R package for Windows
 
 ### Installation
 
-In case you are behind a proxy, you can configure this first:
+Use `remotes` to install directly from Github:
 ```r
-# using package httr:
-httr::set_config(httr::use_proxy(
-  url = "<URLofYourProxy>", 
-  port = <PortOfYourProxy>, 
-  username = "<YourUsername>", 
-  password = "<YourPassword>"
-))
+# using package remotes:
+remotes::install_github("miraisolutions/winsendkeys")
 ```
 
-Use `devtools` to install directly from Github:
+In case you are behind a proxy, you can configure this first:
 ```r
-# using package devtools:
-devtools::install_github("miraisolutions/winsendkeys")
+# accessing Github's API over https, while using a http-proxy:
+Sys.setenv(https_proxy="http://<username>:<password>@<ip>:<port>")
 ```
 
 ### Usage

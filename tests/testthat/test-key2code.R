@@ -1,13 +1,8 @@
-# suppressMessages({
-#   library(assertthat)
-# })
 
 context("key2code")
 
-if (FALSE) {
-  # Execute the command below to run the tests
-  devtools::test(pkg = ".", filter = "key2code", reporter = "summary")
-}
+# Execute the command below to run the tests
+# devtools::test(pkg = ".", filter = "key2code", reporter = "summary")
 
 test_that("key2code returns 2-column data.frame", {
   res <- key2code()

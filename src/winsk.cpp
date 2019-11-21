@@ -38,6 +38,8 @@ void sendKeyUp(unsigned char keyCode) {
   SendInput(1, &input, sizeof(INPUT));
 }
 
+//' Alt-tabbing function
+//' @return Side-effecting function
 //' @export
 // [[Rcpp::export]]
 void altTab() {
@@ -62,6 +64,8 @@ void ctrlAltDown() {
 }
 */
 
+//' Self-writing and -calling "recursive" function
+//' @return Side-effecting function
 //' @export
 // [[Rcpp::export]]
 void loopTest() {
