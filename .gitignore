@@ -10,6 +10,8 @@
 /*.tar.gz
 # Output files from R CMD check
 /*.Rcheck/
+# Positron files
+.vscode/
 # RStudio files
 .Rproj.user/
 *.Rproj
@@ -30,3 +32,5 @@ packrat/
 .Rprofile
 packrat/lib*/
 packrat/src/
+
+/.quarto/
