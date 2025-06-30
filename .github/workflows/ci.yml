@@ -28,19 +28,15 @@ jobs:
         with:
           r-version: ${{ matrix.r-version }}
           use-public-rspm: true
-      
+
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
           extra-packages: rcmdcheck, covr
 
+      # below includes a sub-step to show testthat output
       - uses: r-lib/actions/check-r-package@v2
 
-      - name: Show testthat output
-        if: always()
-        run: find check -name 'testthat.Rout*' -exec cat '{}' \; || true
-        shell: bash
-
-      - name: Test coverage
+      - name: Analyze and upload test coverage
         if: success() && matrix.r-version == 'release'
         run: |
           Rscript scripts/runCodecov.R
