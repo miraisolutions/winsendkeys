@@ -44,4 +44,4 @@ jobs:
         if: success() && matrix.r-version == 'release'
         run: |
           scripts\runCodecov.R
-        shell: Rscript
+        shell: Rscript {0}
