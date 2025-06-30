@@ -32,3 +32,5 @@ packrat/
 .Rprofile
 packrat/lib*/
 packrat/src/
+
+/.quarto/
