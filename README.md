@@ -1,6 +1,6 @@
 # winsendkeys
 
-[![Build Status]()]
+[![Build Status](https://github.com/miraisolutions/winsendkeys/actions/workflows/ci.yml/badge.svg)](https://github.com/miraisolutions/winsendkeys/actions/workflows/ci.yml)
 [![codecov](https://codecov.io/gh/miraisolutions/winsendkeys/branch/master/graph/badge.svg)](https://codecov.io/gh/miraisolutions/winsendkeys)
 
 Sendkeys R package for Windows
