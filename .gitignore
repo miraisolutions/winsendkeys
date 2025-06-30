@@ -11,7 +11,7 @@
 # Output files from R CMD check
 /*.Rcheck/
 # Positron files
-.vscode/
+/.vscode/
 # RStudio files
 .Rproj.user/
 *.Rproj

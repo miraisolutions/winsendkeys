@@ -2,7 +2,7 @@
 ^\.Rproj\.user$
 ^packrat/
 ^\.Rprofile$
-^.github/
+^\.github/
 ^codecov\.yml$
 ^scripts/
-^.vscode/
+^\.vscode/
