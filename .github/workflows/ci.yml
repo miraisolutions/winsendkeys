@@ -43,5 +43,4 @@ jobs:
       - name: Test coverage
         if: success() && matrix.r-version == 'release'
         run: |
-          scripts/runCodecov.R
-        shell: Rscript {0}
+          Rscript scripts/runCodecov.R
