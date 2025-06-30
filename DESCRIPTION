@@ -19,6 +19,7 @@ Imports:
 LinkingTo: Rcpp
 Suggests:
     testthat (>= 2.0.0),
+    xml2,
     covr
 SystemRequirements:
     Windows
