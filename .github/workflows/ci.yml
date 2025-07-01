@@ -36,7 +36,16 @@ jobs:
       # below includes a sub-step to show testthat output
       - uses: r-lib/actions/check-r-package@v2
 
+      - name: Upload test results to Codecov
+        if: ${{ !cancelled() }} && matrix.r-version == 'release'
+        uses: codecov/test-results-action@v1
+        with:
+          files: check/*.Rcheck/tests/junit.xml
+          token: ${{ secrets.CODECOV_TOKEN }}
+
       - name: Analyze and upload test coverage
         if: success() && matrix.r-version == 'release'
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
         run: |
           Rscript scripts/runCodecov.R
